@@ -4,6 +4,8 @@
 
 Game* Game::m_instance;
 
+//push test
+
 Game::Game()
 {
 	m_instance = this;
