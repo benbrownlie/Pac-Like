@@ -1,3 +1,18 @@
+# How to install and play
+
+Go to releases and download the most recent one.
+
+Unzip folder and run the exe
+
+### Controls
+Move your character around the maze using the WASD controls
+* W = up
+* A = left
+* S = down
+* D = right
+
+
+
 # raygame - sample project
 
 This is a sample C++ project setup with [raylib][raylib] for Visual
