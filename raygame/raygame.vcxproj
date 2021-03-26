@@ -166,6 +166,7 @@
     <ClCompile Include="Agent.cpp" />
     <ClCompile Include="Behavior.cpp" />
     <ClCompile Include="EvadeBehavior.cpp" />
+    <ClCompile Include="EvadePathBehavior.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="KeyboardBehavior.cpp" />
@@ -187,6 +188,7 @@
     <ClInclude Include="Agent.h" />
     <ClInclude Include="Behavior.h" />
     <ClInclude Include="EvadeBehavior.h" />
+    <ClInclude Include="EvadePathBehavior.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Ghost.h" />
     <ClInclude Include="KeyboardBehavior.h" />

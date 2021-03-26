@@ -74,6 +74,9 @@
     <ClCompile Include="EvadeBehavior.cpp">
       <Filter>Pac Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EvadePathBehavior.cpp">
+      <Filter>Pac Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -128,6 +131,9 @@
       <Filter>Pac Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EvadeBehavior.h">
+      <Filter>Pac Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadePathBehavior.h">
       <Filter>Pac Header Files</Filter>
     </ClInclude>
   </ItemGroup>
