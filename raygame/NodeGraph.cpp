@@ -47,7 +47,8 @@ std::deque<NodeGraph::Node*> NodeGraph::findPath(Node* start, Node* end)
 		if (currentNode == end)
 		{
 			//Return the new path found
-			return path;
+
+			return closedList;
 			//end if statement
 		}
 
