@@ -16,7 +16,7 @@ std::deque<NodeGraph::Node*> NodeGraph::findPath(Node* start, Node* end)
 	}//end if statement
 
 	//Create a node pointer that will be act as an iterator for the graph
-	Node* currentNode = start;
+	Node* currentNode = nullptr;
 
 	//Create an open list
 	std::deque<Node*> openList;
@@ -54,7 +54,9 @@ std::deque<NodeGraph::Node*> NodeGraph::findPath(Node* start, Node* end)
 			while (currentNode->previous != start)
 			{
 				path.push_front(currentNode);
+				Node* nextNode = currentNode;
 				currentNode = currentNode->previous;
+				nextNode->previous = nullptr;
 			}
 			return path;
 			//end if statement
