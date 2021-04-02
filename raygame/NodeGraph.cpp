@@ -3,7 +3,7 @@
 
 std::deque<NodeGraph::Node*> NodeGraph::findPath(Node* start, Node* end)
 {
-	std::deque<Node*> path;\
+	std::deque<Node*> path;
 	//Check if the start or the goal pointer is null
 	if (!start || !end)
 	{//return an empty list
@@ -11,7 +11,7 @@ std::deque<NodeGraph::Node*> NodeGraph::findPath(Node* start, Node* end)
 	}//end if statement
 
 	//Create a node pointer that will be act as an iterator for the graph
-	Node* currentNode = start;
+	Node* currentNode = nullptr;
 
 	//Create an open list
 	std::deque<Node*> openList;
@@ -46,6 +46,11 @@ std::deque<NodeGraph::Node*> NodeGraph::findPath(Node* start, Node* end)
 		if (currentNode == end)
 		{
 			//Return the new path found
+			while (currentNode->previous != nullptr)
+			{
+				path.push_front(currentNode);
+				currentNode = currentNode->previous;
+			}
 			return path;
 			//end if statement
 		}
