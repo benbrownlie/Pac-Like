@@ -27,7 +27,7 @@ void PathfindBehavior::update(Agent* owner, float deltaTime)
 	if (ownerTile.x == nextTile.x && ownerTile.y == nextTile.y) {
 		if (!m_path.empty())
 			m_path.pop_front();
-		m_needPath = true;
+		//m_needPath = true;
 	}
 
 	//Find the direction
