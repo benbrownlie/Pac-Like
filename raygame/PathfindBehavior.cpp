@@ -34,6 +34,8 @@ void PathfindBehavior::update(Agent* owner, float deltaTime)
 	MathLibrary::Vector2 direction = { 0.0f, 0.0f };
 	if (!m_path.empty())
 		direction = MathLibrary::Vector2::normalize(m_path.front()->position - ownerPosition);
+	else
+		m_needPath = true;
 
 	//Calculate the force
 	MathLibrary::Vector2 desiredVelocity = direction * owner->getMaxSpeed();
