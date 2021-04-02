@@ -73,7 +73,7 @@ int main()
 	};
 	Maze::TileKey pacMap[Maze::HEIGHT][Maze::WIDTH] = {
 		{ w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w },
-		{ w, _, _, _, _, _, _, _, _, _, _, _, g, w, w, _, _, _, _, _, _, _, _, _, _, _, _, w },
+		{ w, _, _, _, _, _, _, _, _, _, _, _, _, w, w, _, _, _, _, _, _, _, _, _, _, _, _, w },
 		{ w, _, w, w, w, w, _, w, w, w, w, w, _, w, w, _, w, w, w, w, w, _, w, w, w, w, _, w },
 		{ w, _, w, w, w, w, _, w, w, w, w, w, _, w, w, _, w, w, w, w, w, _, w, w, w, w, _, w },
 		{ w, _, w, w, w, w, _, w, w, w, w, w, _, w, w, _, w, w, w, w, w, _, w, w, w, w, _, w },
@@ -83,7 +83,7 @@ int main()
 		{ w, _, _, _, _, _, _, w, w, _, _, _, _, w, w, _, _, _, _, w, w, _, _, _, _, _, _, w },
 		{ w, w, w, w, w, w, _, w, w, w, w, w, _, w, w, _, w, w, w, w, w, _, w, w, w, w, w, w },
 		{ w, w, w, w, w, w, _, w, w, w, w, w, _, w, w, _, w, w, w, w, w, _, w, w, w, w, w, w },
-		{ w, w, w, w, w, w, _, w, w, _, _, _, _, _, _, _, _, _, _, w, w, _, w, w, w, w, w, w },
+		{ w, w, w, w, w, w, _, w, w, g, _, _, _, _, _, _, _, _, _, w, w, _, w, w, w, w, w, w },
 		{ w, w, w, w, w, w, _, w, w, _, _, _, _, _, _, _, _, _, _, w, w, _, w, w, w, w, w, w },
 		{ w, w, w, w, w, w, _, w, w, _, _, _, _, _, _, _, _, _, _, w, w, _, w, w, w, w, w, w },
 		{ _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ },
